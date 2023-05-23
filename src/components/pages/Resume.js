@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Portfolio() {
+export default function Resume() {
   return (
     <div class='div1'>
-      <h1>Portfolio</h1>
+      <h1>Experience</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

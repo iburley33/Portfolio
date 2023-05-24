@@ -1,9 +1,14 @@
 :root {
-  --header: #333;
-  --main-txt: white;
-  --main-bg: #333;
-  --alt-text: #333;
+  --break-line: #BA2D0B;
+  --head-txt: #19535F;
+  --name-txt:#BA2D0B;
+  --header: white;
+  --main-txt: #333;
+  --main-bg: white;
+  --alt-text: #BA2D0B;
   --alt-bg: white;
+  --card-bg:#19535F;
+  --card-txt:white;
   --border-radius: 50px;
   font-family: 'Inter', sans-serif;
 }
@@ -12,13 +17,12 @@
   background-color: var(--main-bg);
   font-family: 'Inter', sans-serif;
   display: flex;
-  border: var(--main-bg);
+  border-left: 2px solid var(--break-line);
   font-family: 'Inter', sans-serif;
   height: auto;
   width: 60%;
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 100px;
+  padding-inline: 20px;
+  margin-top: 50px;
   margin-inline: auto;
   flex-direction: column;
   align-items: center;
@@ -26,7 +30,22 @@
   font-size: 15px;
   color: var(--main-txt);
 }
-
+.base {
+  background-color: var(--main-bg);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  height: auto;
+  width: 60%;
+  padding: 20px;
+  margin-top: 100px;
+  margin-inline: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--main-txt);
+}
 .portfolio {
   background-color: var(--alt-bg);
   color: var(--alt-txt);
@@ -48,7 +67,7 @@
 }
 
 .project {
-  background-color: var(--main-bg);
+  background-color: var(--card-bg);
   font-family: 'Inter', sans-serif;
   display: flex;
   border: var(--main-bg);
@@ -64,7 +83,7 @@
   justify-content: center;
   flex-wrap: wrap;
   font-size: 15px;
-  color: var(--main-txt);
+  color: var(--card-txt);
 }
 
 img.projectImg{
@@ -72,8 +91,8 @@ img.projectImg{
 }
 
 img.headShot {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 200px;
   margin-top: auto;
   margin-bottom: auto;
@@ -83,6 +102,7 @@ img.headShot {
 h1 {
   font-family: 'Inter', sans-serif;
   page-break-after: always;
+  color: var(--head-txt);
 }
 
 header {
@@ -93,23 +113,92 @@ header {
   background-color: var(--header);
   color: var(--main-txt);
   padding-right: 20px;
-  margin-bottom: 100 px;
+  margin-bottom: 50 px;
+  border-bottom: #333;
 
 }
 
 li {
   display: flex;
 }
+footer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--head-txt);
+  margin-top: 5%;
+  background-color: #19535F;
+}
+.cardImg {
+  height: 80%;
+  width: 80%;
+}
 
+.imgLink {
+  display:flex;
+  justify-content: space-around;
+}
+.liLink {
+  max-height: 35px;
+  border-radius: 5px;
+  margin-inline: 60px;
+}
+.ghLink {
+  max-height: 35px;
+  border-radius: 50%;
+}
+.linkDiv {
+  height: 50%;
+}
+.contactPage{
+  display: flex;
+  flex-direction: row;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 5%;
+}
+.base{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+.loud{
+  font-size: xxx-large;
+  margin-left: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.artBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.art{
+  height: 300px;
+  border-radius: 110px;
+  margin-left: 16%;
+}
 .name {
   font-family: 'Inter', sans-serif;
   background-color: var(--main-bg);
-  color: var(--main-txt);
+  color: var(--name-txt);
   text-align: center;
   padding-inline: 14px;
   font-size: xx-large;
   margin-right: auto;
   margin-left: 10px;
+}
+.name2 {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--name-txt);
+  margin-right: auto;
+  padding: 0%;
 }
 li a {
   background-color: var(--header);
@@ -123,8 +212,6 @@ li a {
   padding-top: 10px;
   text-decoration: none;
   margin-right: 20px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 .portHead {
   width: 100%;
@@ -147,18 +234,19 @@ li a:hover {
 .active {
   background-color: var(--alt-bg);
   color: var(--alt-text);
+  border-right: 1px solid var(--break-line);
+  border-left: 1px solid var(--break-line);
 }
 
 .contactSect {
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  background-color: var(--main-bg);
+  margin-top: 50px;
+  background-color: var(--card-bg);
   min-width: 35%;
   max-width: max-content;
-  color: var(--main-txt);
-  margin-inline: auto;
+  color: var(--card-txt);
   border: var(--main-bg);
   border-radius: 20px;
   text-align: center;
@@ -167,11 +255,10 @@ li a:hover {
 
 .contact {
   font-family: 'Inter', sans-serif;
-  background-color: var(--main-bg);
+  background-color: var(--card-bg);
   border-radius: 20px;
-  margin-inline: auto;
   padding: 40px;
-  color: var(--main-txt);
+  color: var(--card-txt);
 }
 
 .contact input,

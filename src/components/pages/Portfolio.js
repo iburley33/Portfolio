@@ -1,27 +1,33 @@
 import React from 'react';
 import Project from '../Project';
+import velocity from '../../imgs/velocity.png';
+import soon from '../../imgs/soon.jpeg';
 
 export default function Portfolio() {
   const propsArray = [
     {
-      name: "name1",
-      desc: "desc1",
-      link: "link1"
+      name: "Velocity",
+      desc: "Your one stop shop for all things cycling. Find your nearest cycling route and current weather conditions in 1 quick search.",
+      link: 'https://young-river-94596.herokuapp.com/login',
+      image: velocity
     },
     {
-      name: "name2",
-      desc: "desc2",
-      link: "link2"
+      name: "Coming Soon!",
+      desc: "Excited to share more projects with you very soon!",
+      link: "link2",
+      image: soon
     },
     {
-      name: "name3",
-      desc: "desc3",
-      link: "link3"
+      name: "Coming Soon!",
+      desc: "Excited to share more projects with you very soon!",
+      link: "link2",
+      image: soon
     },
     {
-      name: "name4",
-      desc: "desc4",
-      link: 'link4',
+      name: "Coming Soon!",
+      desc: "Excited to share more projects with you very soon!",
+      link: "link2",
+      image: soon
     },
   ]
   return (
@@ -31,7 +37,7 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
       </div>
       {propsArray.map((project) => {
-        return <Project name={project.name} description={project.desc} imageLink={project.link} />
+        return <Project name={project.name} description={project.desc} image={project.image} link={project.link} />
       })}
 
     </div>

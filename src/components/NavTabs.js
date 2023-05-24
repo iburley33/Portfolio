@@ -8,7 +8,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     <header>
       <img class="headShot" src={headshot}></img>
       <p class='name'>
-        Ian Burley
+        I | B
       </p>
       <ul>
         <li className='nav-link'>
@@ -34,7 +34,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
         <li className='nav-link'>
           <a
-            href="#blog"
+            href="#resume"
             onClick={() => handlePageChange('Resume')}
             // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}

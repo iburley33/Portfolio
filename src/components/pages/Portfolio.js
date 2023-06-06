@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../Project';
 import velocity from '../../imgs/velocity.png';
 import soon from '../../imgs/soon.jpeg';
+import eatball from '../../imgs/eatball.png'
 
 export default function Portfolio() {
   const propsArray = [
@@ -12,10 +13,10 @@ export default function Portfolio() {
       image: velocity
     },
     {
-      name: "Coming Soon!",
-      desc: "Excited to share more projects with you very soon!",
-      link: "link2",
-      image: soon
+      name: "The Magic Eat Ball!",
+      desc: "A conversation starter and a conversation ender. Let The Magic Eatball decide your next meal for you.",
+      link: "https://lit-brushlands-86158.herokuapp.com/",
+      image: eatball
     },
     {
       name: "Coming Soon!",

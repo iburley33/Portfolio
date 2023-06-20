@@ -8,7 +8,7 @@ export default function About() {
       <h1 class='loud'>Full</h1>
       <h1 class='loud'>Stack</h1>
       <h1 class='loud'>Developer</h1>
-      <img src={art} class='art'></img>
+      <img src={art} class='art' alt='ai self portrait'></img>
       </div>
     <div class="div1">
       <h1>About Me</h1>
@@ -20,7 +20,7 @@ export default function About() {
         Hello world! I wrote my first line of code in 2015. Around the same time I attempted to leave my career in fitness and return to school to pursue a degree in computer science but my company needed me and they made me an offer I couldn't refuse if I would stay on board and continue to help them grow. At which point I began to travel the nation for them and lived half of my life on the road.
       </p>
       <p>
-        So I decided to go the self taught route for some time, dabbled with friends, consumed content from YouTube, got a Treehouse membership, and just picked the brains of my developer friends whenever I could. It was just a hobby until Covid-19 and my life got flip turned upside down. During the pandemic I was given a lot more time to pursue my hobby while I didn't have to worry about my typical career reponsibilities during closures. It was during this time that I decided it was time to get more serious about my hobby.
+        I decided to go the self taught route for some time, dabbled with friends, consumed content from YouTube, got a Treehouse membership, and just picked the brains of my developer friends whenever I could. It was just a hobby until Covid-19 and my life got flip turned upside down. During the pandemic I was given a lot more time to pursue my hobby. It was during this time that I decided that I needed to turn this hobby into a career for myself. It was time to get serious.
       </p>
       <h4>
         In 2022 I graduated from University of California's Full Stack Web Development Program.

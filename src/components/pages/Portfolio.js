@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 import velocity from '../../imgs/velocity.png';
-import soon from '../../imgs/soon.jpeg';
+
 import eatball from '../../imgs/eatball.png'
 
 export default function Portfolio() {
@@ -19,16 +19,10 @@ export default function Portfolio() {
       image: eatball
     },
     {
-      name: "Coming Soon!",
-      desc: "Excited to share more projects with you very soon!",
-      link: "link2",
-      image: soon
-    },
-    {
-      name: "Coming Soon!",
-      desc: "Excited to share more projects with you very soon!",
-      link: "link2",
-      image: soon
+      name: "Velocity",
+      desc: "Your one stop shop for all things cycling. Find your nearest cycling route and current weather conditions in 1 quick search.",
+      link: 'https://young-river-94596.herokuapp.com/login',
+      image: velocity
     },
   ]
   return (
